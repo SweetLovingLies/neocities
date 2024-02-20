@@ -1,0 +1,519 @@
+:root {
+    --blurple: #b1adff;
+}
+
+            @font-face {
+                font-family: basiic;
+                src: url('fonts/basiic.ttf');
+            }
+            @font-face {
+                font-family: porkys;
+                src: url('fonts/PORKYS_.TTF');
+            }
+            @font-face {
+                font-family: BILLO;
+                src: url('fonts/BILLO.TTF');
+            }
+
+body {
+    color: #8186B3;
+    font-family: basiic;
+    font-size: 12pt;
+    text-decoration: none;
+    margin: 0;
+    background-image: url(/assets/movestarbackground.gif);
+    background-size: 200px 200px;
+    animation: fadeInAnimation ease .25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+0% {
+    opacity: 0;
+  }
+100% {
+    opacity: 1;
+  }
+}
+             
+.wrapper {
+    max-width: 1024px;
+    margin: auto;
+}
+
+a:hover {
+    color: #d17dff;
+}
+.blockimages {
+    width: 40%;
+    margin: 10px 20px;
+  }
+  
+p {
+    margin-bottom: 10pt
+}
+
+h1 {
+    font-family: porkys;
+    font-size: 40px;
+    margin-left: 10px;
+    text-shadow: 0 0 7px #b1adff,
+        0 0 10px #b1adff,
+        0 0 21px #b1adff;
+    margin: 0;
+}
+
+h2 {
+    font-family: porkys;
+    margin: auto;
+    font-size: 50px;
+    text-shadow: 0 0 7px #b1adff,
+        0 0 10px #b1adff,
+        0 0 21px #b1adff;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-family: porkys;
+    margin: auto;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: white;
+}
+
+.banner {
+    padding: 10px;
+    border: 5px solid #b1adff;
+    border-radius: 20px;
+    width: 80%;
+    height: 2.4em;
+    text-align: right;
+    background-image: url("/assets/PearliaSystemBG.png");
+    background-size: cover;
+    background-position: left;
+}
+
+.content {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+main {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+/* section img {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+} */
+
+.topimg {
+    display: none;
+}
+
+.topbar {
+  -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 3px dashed white;
+    border-radius: 0 0 10px 0px;
+    padding: 5px;
+    max-width: 100%;
+    max-height: 70px;
+    filter: drop-shadow(1px 1px 1px #534aff);
+    background: url(assets/sparklecloud.gif) center;
+}
+
+.topbar h1 {
+    font-family: billo;
+    font-size: 50px;
+
+    text-shadow: 0 0 7px #534aff,
+        0 0 10px #534aff,
+        0 0 21px #534aff;
+    margin: 0;
+}
+
+.top {
+    position: relative;
+    right: 20px;
+    color: white;
+}
+
+nav {
+  -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    background-color: white;
+    border: 3px dashed white;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    bottom: 3px;
+    max-width: 300px;
+    filter: drop-shadow(1px 2px 1px #534aff);
+    max-height: 1024px;
+}
+
+.time {
+    background-color: var(--blurple);
+    color: white;
+    margin: 7px;
+    border: 2px dashed #534aff;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 80%;
+}
+
+.banners {
+  -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.banners>img {
+    max-width: 150px;
+    height: auto;
+}
+
+        /* ===== Dropdown Button ===== */
+.dropbtn {
+                background-color: white;
+                color: #8186B3;
+                font-size: 20px;
+                border: none;
+                font-family: 'porkys';
+                width: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  max-width: 160px;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+background-color: white;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ffe6fc;}
+
+        /* ===== Dropdown Button ===== */
+        
+/* Custom Cursor from Cursors4U */
+* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat996.cur), auto !important;}
+/* Custom Cursor from Cursors4U */
+section {
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+}
+
+section h3 {
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section.bio {
+    max-width: 600px;
+    text-indent: 3em;
+}
+
+section.bio::first-letter {
+    font-size: 2em;
+}
+
+/* ===== Hey! I left a lot of this stuff commented out just in case we want to go back in and make a gallery of some sorts. LMK if you have any ideas! - Hana ===== */
+
+/* =====.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(13rem, 100%), 1fr));
+    grid-gap: 10px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    padding: 5px;
+    margin: 20px;
+}
+
+article.profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.petbg {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--lightyellow);
+    border: 10px solid lightblue;
+    outline: 1px solid gray;
+    border-radius: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+span.boil {
+    color: lightblue;
+    font-weight: bold
+}
+
+span.gorl {
+    color: pink;
+    font-weight: bold
+}
+
+figure {
+    margin: 0
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    object-position: bottom;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    position: relative;
+    z-index: 5;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 80%;
+}
+
+figcaption.stats {
+    text-align: center;
+    font-size: 100%;
+    background-color: var(--lightyellow);
+    padding: 1em;
+}
+
+.stats ul {
+    list-style-type: none;
+}
+
+iframe {
+    border: none;
+}
+
+hr {
+    opacity: 20%;
+}
+
+hr.thin {
+    color: #25b893;
+}
+
+
+.infobox {
+    max-height: 300px;
+    max-width: 500px;
+    overflow-y: scroll;
+    border: ridge;
+    margin: auto;
+    padding: 10px;
+    font-size: 90%;
+}
+
+ul {
+    padding-inline-start: 2em;
+}
+
+figcaption.stats ul {
+    padding-inline-start: 0em;
+}
+===== */
+
+footer {
+  -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+/* ===== 
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socialmedia img {
+    height: 15px;
+    width: auto;
+    filter: invert(1);
+}
+===== */
+
+.bottombar {
+    margin: 0px;
+    margin-top: -5px;
+    background-color: var(--blurple);
+    border: 3px dashed white;
+    background: url(/assets/sparklecloud.gif) center;
+    max-width: 100%;
+    max-height: 100px;
+    border-radius: 10px 10px 0 0;
+    border: 3px dashed white;
+    filter: drop-shadow(1px 1px 1px #534aff);
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
+/* ===== 
+ul.menufooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+ul.menufooter {
+    list-style: none;
+}
+
+ul.menufooter li a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+ul.menufooter img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    filter: drop-shadow(1px 1px 0px var(--accent));
+}
+
+ul.menufooter a:hover {
+    color: var(--cream);
+    text-decoration: underline;
+}
+===== */
+
+@media only screen and (max-width: 580px) {
+    .topbar {
+        flex-direction: column;
+        max-height: 100px;
+        padding-bottom: 20px;
+    }
+
+    .top {
+        right: 0px;
+    }
+
+    .topbar h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        flex-flow: no-wrap;
+        bottom: 10px;
+        justify-content: left;
+        max-width: 100%;
+    }
+
+    .time {
+        display: none;
+    }
+    .dropbtn {
+        font-size: 20px;
+            }
+    .dropdown-content {
+      max-width: 100%;
+      text-align: center;
+            }
+    .dropdown-content a {
+        font-size: 13px;
+            }
+
+}

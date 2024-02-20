@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+      ∧＿∧
+　꒰⑅⸝⸝ᵕ ༝ ᵕ⸝⸝⑅꒱  < Kerias the Guide Cat
+┏ーー∪ー∪ーー ┓
+┃＼　　　　 ／ ┃
+┃ ＼　 ♡   ／  ┃
+┃　／＼＿／＼  ┃  Take care! I'll try and add some notes to help you 
+┗ー━ー━ー━ーー ┛  navigate my thought processes. 
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/starlight.css" rel="stylesheet">
+        <meta name="description" content="Welcome to Planet Pearlia! A site to learn about the Pearlia System." />
+        <title>The Pearlia System's Site!</title>
+        <link rel="icon" type="image/x-icon" href="assets/pixels/moon.png">
+        <!-- This script is what resizes the iframe when you click the links!! you should mainly avoid inline JS, but it can be done inline as well. -->
+        <script>
+          function resizeIframe(obj){
+             obj.style.height = 0;
+             obj.style.height = obj.contentWindow.document.body.clientHeight + 'px';
+          }
+        </script>
+        <!-- And this script allows you to link specific sections of the iframe. Very helpful! -->
+        <script src="https://melonking.net/scripts/frame-link.js"></script>
+        </head>
+        <body>
+        <div class="trimt"></div>
+        <div id="container">
+            <div id="headerArea">
+              <div id="header" class="foolloversborder">
+                <div class="hoverme"><div class="pdfront"><img src="/assets/pagedolls/Pagedoll-Faeily.gif"></div><div class="bubble">Who am I? One of Hana's oldest characters lol. You'll find out more about me later. See ya!</div></div>
+                <img class="headertxt" src="assets/Pearlia_SystemT.png" alt="'Pearlia System'">
+                <img class="pdback" src="/assets/pagedolls/Pagedoll-Faeily.gif">
+              </div>
+            <nav id="navbar" class="mainborder" style="margin-bottom: 10px;" >
+                  <ul>
+                    <li><img src="/assets/pixels/castle.gif"></li>
+                    
+                    <li><a href="/main.html" target="maincontent" onClick="document.getElementById('3bar').play()">Home</a></li>
+                    
+                    <li><img src="/assets/pixels/glitters.webp"></li>
+                    
+                    <li><a href="/aboutme.html" target="maincontent" onClick="document.getElementById('yume').play()">About Me</a></li>
+                    
+                    <li><img src="/assets/pixels/glitters.webp"></li>
+                    
+                    <li><a href="/thesystem.html">My System</a></li>
+                    
+                    <li><img src="/assets/pixels/glitters.webp"></li>
+                    
+                    <li><a href="#">My Paracosms</a></li>
+                    
+                    <li><img src="/assets/pixels/glitters.webp"></li>
+                    
+                    <li><a href="/blog/blog.html" target="maincontent" onClick="document.getElementById('5pm').play()">Our Blog</a></li>
+                    
+                    <li><img src="/assets/pixels/glitters.webp"></li>
+                    
+                    <li><a href="#">Projects</a></li>
+                    
+                    <li><img src="/assets/pixels/glitters.webp"></li>
+                    
+                    <li><a href="/myshrines.html" target="maincontent" onClick="document.getElementById('hotel').play()">Shrines</a></li>
+                    
+                    <li><img src="/assets/pixels/glitters.webp"></li>
+                    
+                    <li><a href="/sitemap.html" target="maincontent" onClick="document.getElementById('sunny').play()">Site Map</a></li>
+                    
+                    <li><img src="/assets/pixels/castle.gif"></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="flex">
+              <iframe id="mainframe" name="maincontent"  width="100%" height="1000vh" scrolling="no" frameborder="0" onload="resizeIframe(this)" src="/main.html">
+              </iframe>
+              </div>
+            <footer id="footer" class="mainborder" style="margin-top: 10px;">
+            <img class="fimgleft" src="/assets/blinkies/dontbeafraidtodream.gif" alt="'Don't be afraid to dream' blinkie">
+            <img class="fimgleft" src="/assets/blinkies/badwebdev.gif"  alt="'Bad Website Design' blinkie">
+            <p>Hosted with love on Neocities! </p>
+            <img class="fimgright" src="/assets/blinkies/internetprincess.gif" alt="'Internet Princess' blinkie!">
+            <img class="fimgright" src="/assets/blinkies/hellokitty.gif" alt="'Hello Kitty' blinkie">
+            </footer>
+            <br>
+            <br>
+      </div>
+      
+      <!-- This is how you change the music playing when you click the links! -->
+        <audio loop id="yume">
+            <source src="https://files.catbox.moe/pn0597.mp3" type="audio/mpeg">
+        	Your browser has not support the audio element.
+            </audio>
+            <audio loop autoplay id="3bar">
+            <source src="https://files.catbox.moe/ggy4vp.mp3" preload="auto" type="audio/mpeg">
+        	Your browser has not support the audio element.
+            </audio>
+            <audio loop id="hotel">
+            <source src="https://files.catbox.moe/dn2ows.mp3" type="audio/mpeg">
+        	Your browser has not support the audio element.
+            </audio>
+            <audio loop id="sunny">
+            <source src="https://files.catbox.moe/j9s7lq.mp3" type="audio/mpeg">
+        	Your browser has not support the audio element.
+            </audio>
+            <audio loop id="wanderingrose">
+            <source src="https://files.catbox.moe/1btcvm.mp3" type="audio/mpeg">
+        	Your browser has not support the audio element.
+            </audio>
+            <audio loop id="squall">
+            <source src="https://files.catbox.moe/9w0ddr.mp3" type="audio/mpeg">
+        	Your browser has not support the audio element.
+            </audio>
+            <audio loop id="5pm">
+            <source src="https://files.catbox.moe/5mem5v.mp3" type="audio/mpeg">
+        	Your browser has not support the audio element.
+            </audio>
+            
+    <!-- Here's the script for that. -->
+    <script src="/audiojs.js"></script>
+    <!-- Let's not blast out people's ears now. Mhm -->
+    <script>
+      var audio1 = document.getElementById("3bar");
+      var audio2 = document.getElementById("yume");
+      var audio3 = document.getElementById("hotel");
+      var audio4 = document.getElementById("sunny");
+      var audio5 = document.getElementById("wanderingrose");
+      var audio6 = document.getElementById("squall");
+      var audio7 = document.getElementById("5pm");
+      audio1.volume = 0.04;
+      audio2.volume = 0.02;
+      audio3.volume = 0.06;
+      audio4.volume = 0.03;
+      audio5.volume = 0.02;
+      audio6.volume = 0.02;
+      audio7.volume = 0.04;
+    </script>
+    
+    <div class="trimb"></div>
+  </body>
+</html>

@@ -1,0 +1,350 @@
+:root {
+            }
+            
+            @font-face {
+                font-family: basiic;
+                src: url('/fonts/basiic.ttf');
+            }
+            @font-face {
+                font-family: Helena;
+                src: url('/fonts/HelenaDiary.otf');
+            }
+            @font-face {
+              font-family: NORMAL;
+              src: url('/fonts/OMORI_GAME2.ttf');
+            }
+            @font-face {
+              font-family: FINE;
+              src: url('/fonts/OMORI_GAME.ttf');
+            }
+            
+
+            body {
+                font-family: 'basiic';
+                color: white;
+                background-color: black;
+                animation: fadeInAnimation ease .55s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            
+            
+            @keyframes fadeInAnimation {
+              0% {
+                  opacity: 0;
+              }
+              100% {
+                  opacity: 1;
+               }
+             }
+              
+              
+            h1, h2, h3 {
+              font-family: "Helena";
+              }
+              
+            blockquote {
+              border-left: #4d4385 3px solid;
+              background: #d8d4ec;
+              padding: 0.1px 0.75rem;
+              margin: 0 1.5rem;
+              }
+            
+            hr {
+              width: 75%;
+              margin-top: 1.5rem;
+              margin-bottom: 1.5rem;
+              }
+              
+            .quick-nav {
+              position:fixed;
+              z-index: 999;
+              width: 100%;
+              background: #5f5977;
+              text-align: right;
+              color: white;  
+              font-size: 0.875em;
+              }
+              
+            .navbar a {
+              display: inline-block;
+              text-decoration: none;
+              color: #fff;
+              padding: 5px 10px;
+              margin: 0 2px;
+              }
+              
+            .navbar a:hover, .footer a:hover, .navbar a:focus, .footer a:focus {
+              text-decoration: none;
+              color: white;
+              transition: ease-in 0.1s, ease-out 0.1s;
+              }
+              
+              
+            .header {
+              height: 350px;
+              background: url(assets/PearliaSystemBG2.png);
+              background-size: 100%;
+              }
+            
+            .title {
+              display: flex;
+              background: white;
+              margin-bottom: -25px;
+              justify-content: flex-end;
+              align-items: center;
+              }
+              
+              
+            .headertxt {
+              display: block;
+              width: 60em;
+              padding-right: 1em;
+            }
+              
+            .title-text {
+              padding-right: 1em;
+              line-height: 167%;
+              margin: -3px auto 0;
+              padding-bottom: 15px;
+              }
+              
+            .title-text h1 {
+              padding:0;
+              font-size: 32px;
+              }
+              
+            .title-pic {
+              height: 200px;
+              margin-right: 100px;
+              margin-top: -25px;
+              border: 5px solid white;
+              border-radius: 10px;
+              }
+              
+            .title-pic img {
+              height: 100%;
+              overflow: hidden;
+              }
+              
+            
+            .maincontainer {
+              display: flex;
+              background: url('/assets/thepinnacle/stars.gif'); 
+              justify-content: center;
+            }
+            
+            .sidebarcontainer {
+              display: flex;
+              margin-left: 50px;
+            }
+            
+            sidebar {
+              width: 320px;
+              margin: 50px 0;
+              Font-Family: FINE;
+              font-size: 20px;
+              }
+              
+            sidebar h1 {
+              font-size: 1.2rem;
+              background: white;
+              color: black;
+              padding: 12px 10px 10px 10px;
+              margin: auto;
+              }
+              
+            sidebar a {
+              display: block;
+              background: black;
+              text-decoration: none;
+              margin: 0.5em 0;
+              padding: 0.35em 0.5em;
+              text-align: center;
+              font-size: 20px;
+              font-weight: bold;
+              color: white;
+              border: 8px solid white; 
+              outline: 2px solid black;
+              outline-offset: -2px;
+              }
+              
+            sidebar a:hover, sidebar a:focus {
+              background: #1a1a1a;
+              transition: ease-in 0.1s, ease-out 0.1s;
+              }
+              
+            
+            main {
+              margin: 50px 100px;
+              }
+              
+              
+            .box {
+              margin-bottom: 15px;
+              }
+              
+            .inner {
+              background-color: black;
+              padding: 10px 25px;
+              border: 8px solid white; 
+              outline: 2px solid black;
+              outline-offset: -2px;
+              }
+              .inner2 {
+              background-color: black;
+              padding: 10px 25px;
+              }
+            
+            .inner, .inner2 img {
+              max-width: 100%; 
+              height: auto;
+              border-radius: 5px; 
+              }
+              
+            .box, .title-pic img {
+              border-radius: 5px;
+              overflow: hidden; 
+              }
+              
+              
+            footer {
+              font-family: Normal;
+              background: #5f5977;
+              color: white;
+              padding: 5px 20px;
+              font-size: 20px;
+              padding-bottom: 10px;
+              }
+              
+            footer a {
+              color: #fff;
+              }
+            
+            .footer-column {
+              width: 25%;
+              margin: 5px 10px;
+              display: inline-block;
+              vertical-align: top;
+              }
+              .scrollbox {
+                overflow: auto;
+              }
+              
+              #patchnotes, .welcome {
+                max-height: 300px;
+              }
+              .tabcontent {
+              display: none;
+            }
+            
+            .bullet {
+            vertical-align: text-top;
+            margin-right: 5px;
+            }
+            
+            /* ===== Scrollbar CSS ===== */
+  
+              /* Firefox */
+              * {
+                scrollbar-width: thin;
+                scrollbar-color: black black;
+              }
+            
+              /* Chrome, Edge, and Safari */
+              *::-webkit-scrollbar {
+                width: 17px;
+              }
+            
+              *::-webkit-scrollbar-track {
+                background: black;
+              }
+            
+              *::-webkit-scrollbar-thumb {
+                background-color: black;
+                border-radius: 0px;
+                border: 2px solid white;
+                outline: 2px solid black;
+                outline-offset: 0px;
+              }
+              /* ===== Scrollbar CSS end ===== */
+              
+            
+            /* Media Query */
+            @media(max-width: 900px) {
+              .page-wrapper {
+                padding: 0 50px;
+                }
+              
+              .sidebar {
+                width: 25vw;
+                }
+                
+              .main {
+                margin: 50px 0 50px calc(25vw + 30px);
+                width: calc(75vw - 150px);
+                }
+                
+              .title-pic {
+                margin-right: 7vw;
+                }
+                
+              .title-text {
+                padding-left: 1vw;
+                padding-right: 2vw;
+                }
+              .headertxt {
+                width: 13em;
+            }
+              }
+              
+            @media(orientation: portrait) {  
+              .maincontainer {
+              flex-flow: column wrap;
+            }
+                
+              .sidebarcontainer {
+                display: block;
+                margin: 50px 0;
+                }
+                
+              main {
+                margin: 0;
+                }
+                
+              .title-pic {
+                height: 120px;
+              }
+              
+                
+              }
+              
+            @media(max-width: 500px) {
+              .header {
+                height: 60vw;
+                }
+              
+              .title {
+                padding-right: 0;
+                }
+              
+              .title-text {
+                margin-top: -5px;
+                }
+                
+              .title-text h1 {
+                font-size: 6vw;
+                line-height: 75%;
+                }
+                
+                
+              .page-wrapper {
+                padding: 0.1px 7vw;
+                }
+                
+              .footer-column {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                }
+              }
