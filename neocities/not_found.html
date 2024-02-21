@@ -1,1 +1,104 @@
-Sorry. Everything is archived now. Come back around later when things look good again!
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="GOD FUCKING damnit KRIS where the FUCK are we!?" />
+        <title>Out of Orbit...</title>
+        <link rel="icon" type="image/x-icon" href="/assets/pixels/nightsky.webp">
+        <script>
+        function hover(element) {
+          element.setAttribute('src', 'https://pearliasystem.neocities.org/assets/something_disappear.gif');
+        }
+        function hide(element) {
+          element.remove();
+         }
+        </script>
+   </head>
+  <body>
+     <div id= "container">
+       <a href= "/anewbeginning.html"><img class="hvr-grow-rotate rainbow"  src="/assets/WHERETFAREWE.png"></a>
+     </div>
+       <img id="something" src="https://pearliasystem.neocities.org/assets/something.webp"  onmouseover="apparition.play(); hover(this);" onmouseout="hide(this)"/>
+       <audio id="apparition" src="https://files.catbox.moe/qk17h8.mp3" preload="auto"></audio>
+        <style>
+        :root {
+          --body-bg-image: url('/assets/movestarbackground.gif');
+        }
+            body {
+                margin: 0;
+                background-image: var(--body-bg-image);
+                background-size: repeat;
+            }
+            #container {
+                  max-width: 700px;
+                  margin: 100px auto;
+            }
+            /* Grow Rotate */
+            .hvr-grow-rotate {
+              display: inline-block;
+              vertical-align: middle;
+              -webkit-transform: perspective(1px) translateZ(0);
+              transform: perspective(1px) translateZ(0);
+              box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+              -webkit-transition-duration: 0.3s;
+              transition-duration: 0.3s;
+              -webkit-transition-property: transform;
+              transition-property: transform;
+            }
+            .hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+              -webkit-transform: scale(1.1) rotate(4deg);
+              transform: scale(1.1) rotate(4deg);
+            }
+            /* Grow Rotate */
+            
+            /* Rainbow Border Fun! */
+            .rainbow {
+            	border: 10px solid;
+	            border-image: conic-gradient(from var(--angle), #ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, #ffadad) 1;
+	            animation: 1s rotate linear infinite;
+            }
+
+            @keyframes rotate {
+            	to {
+            		--angle: 360deg;
+            	}
+            }
+            
+            @property --angle {
+              syntax: '<angle>';
+              initial-value: 0deg;
+              inherits: false;
+            }
+            #something {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+           }
+           
+           /* Small Media Query LOL */
+           @media only screen and (max-width: 580px) {
+             #something {
+            bottom: -500px;
+            right: -200px;
+             }
+             .rainbow {
+               display: block;
+               margin: auto;
+               width: 80%;
+             }
+           }
+           
+      </style>
+<audio autoplay loop id="audio_id">
+    <source src="https://files.catbox.moe/4hddc5.mp3"  preload="auto" type="audio/mpeg">
+    Your browser does not support the audio element!
+  </audio>
+  <script>
+    document.getElementById('audio_id').load();
+    document.getElementById('apparition').load();
+    audio_id.volume = 0.02;
+    apparition.volume = 0.5;
+  </script>
+   </body>
+</html>
