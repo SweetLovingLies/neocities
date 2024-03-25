@@ -216,6 +216,7 @@
     a {
       background-image: url('/assets/D3C0RAGRL/blingeeglitz2.gif');
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       text-decoration-style: none;
       font-weight: bold;
@@ -279,6 +280,7 @@
     .rainbowtxt {
       background-image: url('/assets/D3C0RAGRL/rainbow gradient.gif');
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: #8a77a9;
@@ -287,6 +289,7 @@
     .sparkles {
       background-image: url('/assets/D3C0RAGRL/blingeeglitz.gif');
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: bold;
     }

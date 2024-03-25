@@ -1,7 +1,4 @@
-:root {
-            } 
-          
-          @font-face {
+@font-face {
                 font-family: basiic;
                 src: url('/fonts/basiic.ttf');
             }
@@ -84,7 +81,7 @@
             .border2 {
                 border-width:12px;
                 border-style:solid;
-                border-image: url("https://i.imgur.com/gTFIwdW.png") 11 fill round;
+                border-image: url("/assets/borders/pinkborder.png") 11 fill round;
             }
             
             main {
