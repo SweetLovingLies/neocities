@@ -489,11 +489,6 @@
             }
             
             /* ===== Scrollbar CSS ===== */
-              /* Firefox */
-            * {
-              scrollbar-width: none;
-              scrollbar-color: #eca8ff #ffffff;
-            }
             
             /* Chrome, Edge, and Safari */
             *::-webkit-scrollbar {
